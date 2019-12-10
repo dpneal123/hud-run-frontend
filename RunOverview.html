@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Run Overview</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-item nav-link active" href="#">Home</a><span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Races</a>
+            <a class="nav-item nav-link" href="./About.html">About</a>
+        </ul>
+    </div>
+    <a class="navbar-brand" href="#">HudRun</a>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="./RegistrationPage.html">Register</a>
+            <a class="nav-item nav-link" href="./LoginPage.html">Login</a>
+            <a class="nav-item nav-link" href="./AccountPage.html">Account</a>
+        </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+
+<div style="padding: 25px" class="container" id="page-content">
+<center>
+
+<div class="container" style="padding: 25px; width: 100%;">
+    <div class="row align-items-center">
+    <div class="col-sm">
+
+    <h2 id="location">Location</h2>
+
+    <h3 id="address">Address, Postcode</h3>
+
+    <h4 id="date">Date</h4>
+    <h5 id="time">Time</h5>
+
+    </div>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var location = {lat: 53.649248, lng: -1.798567};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 15, center: location});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: location, map: map});
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZf10qxelLU_R9gDL8fwOytQwnk4JsaHY&callback=initMap">
+</script>
+
+<div id="map" class="col-sm"></div>
+    </div>
+</div>
+
+    <div style="padding: 25px">
+    <button class="mainButton" type="submit" id="signupbutton">Sign Up!</button>
+</div>
+
+</center>
+</div>
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>Designed and Created by SADJAR</small>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

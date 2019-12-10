@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Account</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Races</a>
+            <a class="nav-item nav-link" href="./About.html">About</a>
+        </ul>
+    </div>
+    <a class="navbar-brand" href="#">HudRun</a>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="./RegistrationPage.html">Register</a>
+            <a class="nav-item nav-link" href="./LoginPage.html">Login</a>
+            <a class="nav-item nav-link active" href="./AccountPage.html">Account</a><span class="sr-only">(current)</span></a>
+        </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<br><br><br><br>
+
+<center>
+    <div class="container" style='width: 100%'>
+        <div class="col"></div>
+        <div class="col">
+        <h2>Account</h2>
+
+        <form>
+            <div>
+                <label id="fName">First name:
+                    <input class="form-control" type="text" name="first-name" placeholder="First Name">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label id="lName">Last name:
+                <input class="form-control" type="text" name="last-name" placeholder="Last Name">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label id="DoB">Date of Birth:
+                <input class="form-control" type="Date" name="date-of_birth" placeholder="Date of Birth">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label id="email">Email Address:
+                <input class="form-control" type="text" name="email-Address" placeholder="Email">
+                </label>
+            </div>
+            <div>
+                <br>
+                <hr>
+                <br>
+                <h4 id="past-races-text">Past Races</h4>
+                <div style="height:300px;width:100%;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+                    <dl class="row">
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <br>
+                    </dl>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <h5 id="upcoming-races-text">Upcoming Races</h5>
+                <div style="height:300px;width:100%;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+                    <dl>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">--Time</dd>
+                        <dd class="col-sm-9">--Date</dd>
+                        <dd class="col-sm-9">--Postcode</dd>
+                        <br>
+                    </dl>
+                </div>
+                <div style="padding: 25px">
+                    <button class="mainButton" type="button" id="back-button">Back</button>
+                </div>
+            </div>
+            <br>
+        </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</center>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
